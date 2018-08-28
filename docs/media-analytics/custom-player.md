@@ -221,7 +221,7 @@ These HTTP Tracking API parameters can be used to track the usage of media:
 When tracking a media impression it is important to set the parameter `ma_st` to `0`:
 
 ```
-https://yourpiwikdomain/piwik.php?ma_st=0ma_id=8C1gOQ9CPOiQfzft&ma_ti=MediaName&ma_pn=playerName&ma_mt=video&ma_re=https%3A%2F%2Fplayer.example.org%2Fvideo%2F1111111&idsite=1&rec=1&r=077275&h=15&m=33&s=48&url=http%3A%2F%2Fexample.piwik&...
+https://yourpiwikdomain/piwik.php?ma_st=0&ma_id=8C1gOQ9CPOiQfzft&ma_ti=MediaName&ma_pn=playerName&ma_mt=video&ma_re=https%3A%2F%2Fplayer.example.org%2Fvideo%2F1111111&idsite=1&rec=1&r=077275&h=15&m=33&s=48&url=http%3A%2F%2Fexample.piwik&...
 ```
 
 ### Example request to track a media progress 
