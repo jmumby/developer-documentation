@@ -51,12 +51,12 @@ console of your browser.
 
 ## Is it possible to change the ping interval when a media is played?  
 
-Yes, it is possible by calling the method `setPingInterval`. By default, an update is sent every 5 seconds. 
+Yes, it is possible by calling the method `setPingInterval`. By default, an update is sent every 10 seconds. 
 Sending the ping more frequently can be useful to get a bit more accurate statistics, sending it less frequently can
 be useful to reduce the amount of traffic your server has to handle.
 
 ```js
-var intervalInSeconds = 2;
+var intervalInSeconds = 10;
 _paq.push(['MediaAnalytics::setPingInterval', intervalInSeconds]);
 ```
 
@@ -121,7 +121,7 @@ In the `matomo.js` tracker we differentiate between two kind of methods:
 ```js
 window.matomoMediaAnalyticsAsyncInit = function () {
     // static methods
-    var intervalInSeconds = 2;
+    var intervalInSeconds = 10;
     Matomo.MediaAnalytics.removePlayer('youtube'); 
     Matomo.MediaAnalytics.setPingInterval(intervalInSeconds);
      
