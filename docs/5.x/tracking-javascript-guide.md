@@ -167,6 +167,8 @@ Piwik will then send requests to count the actual time spent in the visit, as lo
  * navigating to another page within the same tab. 
  * closing the tab.
 
+Even if the heartbeat timer is enabled, the time spent on a visit will not be tracked until the specified duration for the heartbeat timer is reached. This means that even if one of the interactions above occurs within the first 15 seconds (or the custom value you set), the visit will still be counted as 0 seconds.
+
 ```javascript
 // Change how long a tab needs to be active to be counted as viewed in seconds/
 // Requires a page to be actively viewed for 30 seconds for any heart beat request to be sent.
