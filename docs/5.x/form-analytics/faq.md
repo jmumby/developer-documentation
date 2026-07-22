@@ -66,7 +66,7 @@ field you want to ignore. If you ignore the whole form, Piwik will not even send
 <input data-matomo-ignore type="text">
 ```
  
-## How do we track a form with Piwik when our website does not use a form element?
+## How do we track a form with Matomo when our website does not use a form element?
 
 Usually, forms are wrapped within a `form` element. However, this might not always be the case. You can still track such
 forms automatically by adding a `data-matomo-form` (recommended) or a `data-piwik-form` attribute to an element that contains all the form fields:
